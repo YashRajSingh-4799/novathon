@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/animate.min.css">
+		<!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="css/templatemo-style.css">
+    <link rel="stylesheet" href="css/accordian.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        fontFamily: {
+          sans: ['Inter', 'sans-serif'],
+        },
+      }
+    }
+  }
+</script>
+		<script src="js/jquery.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.singlePageNav.min.js"></script>
+		<script src="js/typed.js"></script>
+		<script src="js/wow.min.js"></script>
+		<script src="js/custom.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>NOVATHON</title>
+</head>
+<body id="top" class="bg-white">
+
+  <!-- start preloader -->
+  <div class="preloader">
+    <div class="sk-spinner sk-spinner-wave">
+          <div class="sk-rect1"></div>
+           <div class="sk-rect2"></div>
+           <div class="sk-rect3"></div>
+           <div class="sk-rect4"></div>
+          <div class="sk-rect5"></div>
+       </div>
+    </div>
+    <!-- end preloader -->
+
+
+
+      
+      <!-- NavBar Starts -->
+      <nav class="bg-black navbar navbar-default templatemo-nav shadow-lg">
+        <div class="max-w-6xl mx-auto px-4">
+          <div class="flex justify-between">
+            <div class="flex space-x-7">
+              <div>
+                <!-- Website Logo -->
+                <a href="index.html" class="flex items-center py-4 px-2">
+                  <img src="assets/img/hackathon.png" alt="Logo" class="rounded-full h-12 w-12 mr-2">
+                  <span class="font-semibold text-white font-serif text-2xl">NOVATHON</span>
+                </a>
+              </div>
+              <!-- Primary Navbar items -->
+              <div class="hidden md:flex items-center space-x-1">
+                <a href="#top" class="py-4 px-2 text-gray-500 font-semibold hover:text-blue-500 hover:border-b-4 border-blue-500 transition duration-300">Home</a>
+                <a href="#events" class="py-4 px-2 text-gray-500 font-semibold hover:text-blue-500 hover:border-b-4 border-blue-500 transition duration-300">Themes</a>
+                <a href="#roadmap" class="py-4 px-2 text-gray-500 font-semibold hover:text-blue-500 hover:border-b-4 border-blue-500 transition duration-300">Roadmap</a>
+                <a href="#organizers" class="py-4 px-2 text-gray-500 font-semibold hover:text-blue-500 hover:border-b-4 border-blue-500 transition duration-300">Event Organizers</a>
+                <a href="#Prizes" class="py-4 px-2 text-gray-500 font-semibold hover:text-blue-500 hover:border-b-4 border-blue-500 transition duration-300">Prizes</a>
+                <a href="#sponsors" class="py-4 px-2 text-gray-500 font-semibold hover:text-blue-500 hover:border-b-4 border-blue-500 transition duration-300">Sponsors</a>
+                <a href="#faq" class="py-4 px-2 text-gray-500 font-semibold hover:text-blue-500 hover:border-b-4 border-blue-500 transition duration-300">FAQ</a>
+              </div>
+            </div>
+            
+            <!-- Mobile menu button -->
+            <div class="md:hidden flex items-center">
+              <button class="outline-none mobile-menu-button">
+              <svg class=" w-6 h-6 text-gray-500 hover:text-blue-500 "
+                x-show="!showMenu"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path d="M4 6h16M4 12h16M4 18h16"></path>
+              </svg>
+            </button>
+            </div>
+          </div>
+        </div>
+        <!-- mobile menu -->
+        <div class="hidden mobile-menu">
+          <ul class="">
+            <li class="active"><a href="#top" class="block text-sm px-2 py-4 text-white bg-blue-500 font-semibold">Home</a></li>
+            <li><a href="#events" class="block text-sm px-2 py-4 hover:bg-blue-500 transition duration-300">Themes</a></li>
+            <li><a href="#roadmap" class="block text-sm px-2 py-4 hover:bg-blue-500 transition duration-300">Roadmap</a></li>
+            <li><a href="#organizers" class="block text-sm px-2 py-4 hover:bg-blue-500 transition duration-300">Event Organizers</a></li>
+            <li><a href="#Prizes" class="block text-sm px-2 py-4 hover:bg-blue-500 transition duration-300">Prizes</a></li>
+            <li><a href="#sponsors" class="block text-sm px-2 py-4 hover:bg-blue-500 transition duration-300">Sponsors</a></li>
+            <li><a href="#faq" class="block text-sm px-2 py-4 hover:bg-blue-500 transition duration-300">FAQ</a></li>
+          </ul>
+        </div>
+        <script>
+          const btn = document.querySelector("button.mobile-menu-button");
+          const menu = document.querySelector(".mobile-menu");
+  
+          btn.addEventListener("click", () => {
+            menu.classList.toggle("hidden");
+          });
+        </script>
+      </nav>
+<!-- NavBar Ends -->
+
+
+
+
+
+
+      <!-- Introduction -->
+      <section  class="text-gray-600 body-font introbox py-28 content-center">
+        <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+          <div class=" lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+            <img class="object-cover object-center rounded-full mx-auto wow fadeInUp" data-wow-offset="50" data-wow-delay="0.9s" alt="hero" src="assets/img/background.jpeg">
+          </div>
+          <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+            <h1 class="title-font sm:text-7xl text-5xl mb-4 font-serif text-black wow fadeInDown" data-wow-offset="50" data-wow-delay="0.9s">NOVATHON <br></h1>
+            <span class="wow fadeInRight text-blue-400 font-extrabold text-3xl" data-wow-offset="50" data-wow-delay="0.9s">GEEKSFORGEEKS STUDENT CHAPTER BBDEC </span>
+            <br >
+            <p class="wow fadeInRight text-black  text-3xl" data-wow-offset="50" data-wow-delay="0.9s">
+              <script src="https://cdn.lordicon.com/xdjxvujz.js"></script>
+              <lord-icon src="https://cdn.lordicon.com/amrlvyxr.json" trigger="hover" colors="primary:#010101" scale="65" style="width:30px;height:30px">
+              </lord-icon>
+
+              <!-- <i class="fa-regular fa-calendar"></i> --> 10th-11th November, 2022
+          </p>
+          <br>
+            <div class="col-md-offset-2 col-md-8">
+              
+              
+              <!-- <h1 class="wow fadeInRight text-blue-400 font-extrabold text-2xl" data-wow-offset="50" data-wow-delay="0.9s">Technical Club of BBDEC  </h1> -->
+              <div class="element text-black text-3xl wow fadeInUp" data-wow-offset="50" data-wow-delay="0.9s">
+                            <div class="sub-element">Imagine</div>
+                            <div class="sub-element"> Think </div>
+                            <div class="sub-element">Build.</div>
+                        </div>
+            </div>
+            <div class="flex justify-center wow fadeInRight" data-wow-offset="50" data-wow-delay="0.9s">
+              <button type="button" onclick="document.location='https://forms.gle/XrJY41bTg7vnKzY99'" class="inline-flex text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded text-lg">Register Now</button>
+              <!-- <button class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">Button</button> -->
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!-- Upcoming Events -->
+
+      <section id="events" class="text-gray-600 body-font ">
+       <!-- Container for demo purpose -->
+          <div class="container my-24 px-6 mx-auto">
+
+
+    <style>
+      .zoom:hover img {
+        transform: scale(1.1);
+      }
+    </style>
+
+    <h2 class="text-6xl font-bold mb-12 text-center">
+       Hackathon Theme
+    </h2>
+
+    <div class="grid lg:grid-cols-4 gap-6">
+      <div class="zoom shadow-lg rounded-lg relative overflow-hidden bg-no-repeat bg-cover"
+        style="background-position: 50%;" data-mdb-ripple="true" data-mdb-ripple-color="dark">
+        <img src="assets/img/lightbulb-illuminating-floor-background.jpg"
+          class="w-full transition duration-300 ease-linear align-middle" />
+        <a href="#!">
+          <div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed"
+            style="background-color: rgba(0, 0, 0, 0.3)">
+            <div class="flex justify-start items-end h-full">
+              <h5 class="text-lg font-bold text-white m-6">Edtech</h5>
+            </div>
+          </div>
+          <div class="hover-overlay">
+            <div
+              class="mask absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100"
+              style="background-color: rgba(253, 253, 253, 0.15)"></div>
+          </div>
+        </a>
+      </div>
+
+      <div class="zoom shadow-lg rounded-lg relative overflow-hidden bg-no-repeat bg-cover"
+        style="background-position: 50%;" data-mdb-ripple="true" data-mdb-ripple-color="dark">
+        <img src="assets/img/Fintech.jpg"
+          class="w-full transition duration-300 ease-linear align-middle" />
+        <a href="#!">
+          <div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed"
+            style="background-color: rgba(0, 0, 0, 0.3)">
+            <div class="flex justify-start items-end h-full">
+              <h5 class="text-lg font-bold text-white m-6">Fintech</h5>
+            </div>
+          </div>
+          <div class="hover-overlay">
+            <div
+              class="mask absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100"
+              style="background-color: rgba(253, 253, 253, 0.15)"></div>
+          </div>
+        </a>
+      </div>
+
+      <div class="zoom shadow-lg rounded-lg relative overflow-hidden bg-no-repeat bg-cover"
+        style="background-position: 50%;" data-mdb-ripple="true" data-mdb-ripple-color="dark">
+        <img src="assets/img/Health_care.jpg"
+          class="w-full transition duration-300 ease-linear align-middle" />
+        <a href="#!">
+          <div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed"
+            style="background-color: rgba(0, 0, 0, 0.3)">
+            <div class="flex justify-start items-end h-full">
+              <h5 class="text-lg font-bold text-white m-6">Healthcare</h5>
+            </div>
+          </div>
+          <div class="hover-overlay">
+            <div
+              class="mask absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100"
+              style="background-color: rgba(253, 253, 253, 0.15)"></div>
+          </div>
+        </a>
+      </div>
+
+      <div class="zoom shadow-lg rounded-lg relative overflow-hidden bg-no-repeat bg-cover"
+        style="background-position: 50%;" data-mdb-ripple="true" data-mdb-ripple-color="dark">
+        <img src="assets/img/open_innovation.jpg"
+          class="w-full transition duration-300 ease-linear align-middle" />
+        <a href="#!">
+          <div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed"
+            style="background-color: rgba(0, 0, 0, 0.3)">
+            <div class="flex justify-start items-end h-full">
+              <h5 class="text-lg font-bold text-white m-6">Open Innovation</h5>
+            </div>
+          </div>
+          <div class="hover-overlay">
+            <div
+              class="mask absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100"
+              style="background-color: rgba(253, 253, 253, 0.15)"></div>
+          </div>
+        </a>
+      </div>
+    </div>
+
+  </section>
+  <!-- Section: Design Block -->
+  
+</div>
+
+
+
+      <!-- Roadmap -->
+
+      <section id="roadmap" class="text-gray-100 body-font bg-gray-800">
+        <br>
+        <br>
+        <br>
+        <div class="text-center">
+        <h1 class="title-font sm:text-5xl text-3xl mb-4 font-serif ml-10  text-white  wow fadeInDown" data-wow-offset="50" data-wow-delay="0.9s">Roadmap Of Hackathon
+        </h1>
+      </div>
+        <br>
+        <div class="container px-5 py-14 mx-auto flex flex-wrap">
+          <div class="flex relative pt-10 pb-20 sm:items-center md:w-2/3 mx-auto wow fadeInUp" data-wow-offset="50" data-wow-delay="0.9s">
+            <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
+              <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+            </div>
+            <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-blue-500 text-white relative z-10 title-font font-medium text-sm">1</div>
+            <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
+              <div class="box flex-shrink-0 w-24 h-24 bg-blue-100 text-blue-500 rounded-full inline-flex items-center justify-center">
+                <!-- <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-12 h-12" viewBox="0 0 24 24">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                </svg> -->
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-12 h-12" viewBox="0 0 24 24">
+                  <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+                  <circle cx="12" cy="7" r="4"></circle>
+                </svg>
+              </div>
+              <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
+                <h1 class="font-medium title-font text-white mb-1 text-xl">Registration Process</h1>
+                <p class="leading-relaxed">Students can apply in a team of 2
+                  to 5 members and individully also.
+                  Those who'll apply individually ,
+                  they'll get a chance to team up with other individual.
+                </p>
+                <br>
+                 <span class="font-bold"> Eligibility:-</span>
+                  <ul class="px-50">
+                    <li># Laptop</li>
+                    <li># Internet Connectivity</li>
+                    <li># Student should be from 2nd or 3rd year</li>
+                  </ul>
+
+              </div>
+            </div>
+          </div>
+          <div class="flex relative pb-20 sm:items-center md:w-2/3 mx-auto wow fadeInUp" data-wow-offset="50" data-wow-delay="0.9s">
+            <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
+              <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+            </div>
+            <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-blue-500 text-white relative z-10 title-font font-medium text-sm">2</div>
+            <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
+              <div class="box flex-shrink-0 w-24 h-24 bg-blue-100 text-blue-500 rounded-full inline-flex items-center justify-center">
+                <!-- <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-12 h-12" viewBox="0 0 24 24">
+                  <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                </svg> -->
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-12 h-12" viewBox="0 0 24 24">
+                  <circle cx="12" cy="5" r="3"></circle>
+                  <path d="M12 22V8M5 12H2a10 10 0 0020 0h-3"></path>
+                </svg>
+              </div>
+              <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
+                <h1 class="font-medium title-font text-white mb-1 text-xl">Presentation Round</h1>
+                <p class="leading-relaxed">All registered candidates will be
+                  called with their laptops, and
+                  they will be given 2 hours time to
+                  think their idea, design their
+                  presentation and present in
+                  front of experts.
+                <br><br>
+                Date- 2 November, 2022 <br><br>
+                Timing:- <br>
+                # 10:00 to 12:00 PM (Presentation Designing) <br>
+                # 12:00 to 2:00 PM (Presenting)
+              </p>
+              </div>
+            </div>
+          </div>
+          <div class="flex relative pb-20 sm:items-center md:w-2/3 mx-auto wow fadeInUp" data-wow-offset="50" data-wow-delay="0.9s">
+            <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
+              <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+            </div>
+            <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-blue-500 text-white relative z-10 title-font font-medium text-sm">3</div>
+            <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
+              <div class=" box flex-shrink-0 w-24 h-24 bg-blue-100 text-blue-500 rounded-full inline-flex items-center justify-center">
+                <!-- <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-12 h-12" viewBox="0 0 24 24">
+                  <circle cx="12" cy="5" r="3"></circle>
+                  <path d="M12 22V8M5 12H2a10 10 0 0020 0h-3"></path>
+                </svg> -->
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-12 h-12" viewBox="0 0 24 24">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                </svg>
+              </div>
+              <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
+                <h1 class="font-medium title-font text-white mb-1 text-xl">Team Qualification
+                  </h1>
+                <p class="leading-relaxed"># Based on presentation round,
+                  Top 10 teams will be selected
+                  based on their presentation.
+                  <br># They will advance to finale
+                  round. That is project making
+                  day.
+                  </p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="flex relative pt-10 pb-20 sm:items-center md:w-2/3 mx-auto wow fadeInUp" data-wow-offset="50" data-wow-delay="0.9s">
+            <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
+              <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+            </div>
+            <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-blue-500 text-white relative z-10 title-font font-medium text-sm">4</div>
+            <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
+              <div class="box flex-shrink-0 w-24 h-24 bg-blue-100 text-blue-500 rounded-full inline-flex items-center justify-center">
+                <!-- <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-12 h-12" viewBox="0 0 24 24">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                </svg> -->
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-12 h-12" viewBox="0 0 24 24">
+                  <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+                  <circle cx="12" cy="7" r="4"></circle>
+                </svg>
+              </div>
+              <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
+                <h1 class="font-medium title-font text-white mb-1 text-2xl ">Project Building Round</h1>
+                <p class="leading-relaxed"># Top 10 Teams will advance to
+                  finale round.
+                  <br># Timing- 9:30 AM to 4:00 PM.
+                  <br># Projects will be collected and
+                  submitted at devfolio website.
+                  <br># Students will explain their
+                  projects in front of experts
+                  between 4:00 PM to 5:00 PM.
+                  <br><br>
+                  Date- 3 November, 2022
+                  </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex relative pt-10 pb-20 sm:items-center md:w-2/3 mx-auto wow fadeInUp" data-wow-offset="50" data-wow-delay="0.9s">
+            <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
+              <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+            </div>
+            <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-blue-500 text-white relative z-10 title-font font-medium text-sm">5</div>
+            <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
+              <div class="box flex-shrink-0 w-24 h-24 bg-blue-100 text-blue-500 rounded-full inline-flex items-center justify-center">
+                <!-- <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-12 h-12" viewBox="0 0 24 24">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                </svg> -->
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-12 h-12" viewBox="0 0 24 24">
+                  <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+                  <circle cx="12" cy="7" r="4"></circle>
+                </svg>
+              </div>
+              <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
+                <h1 class="font-medium title-font text-white mb-1 text-xl">Closing ceremony</h1>
+                <p class="leading-relaxed">Based on Project and project
+                  presentation, everyone will be <br>
+                  graded and result will be declared
+                  within 3-5 working days.
+                  </p>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </section>
+
+
+      <!-- Rules of Event -->
+
+     
+
+      <!-- Organizers -->
+      <section id="organizers">
+        <div class="container my-24 px-6 mx-auto">
+
+          <!-- Section: Design Block -->
+          <section class="mb-32 text-gray-800 text-center">
+            <h2 class="text-5xl font-bold mb-12">Event Organizers</h2>
+        
+            <div class="grid md:grid-cols-3 gap-x-6 lg:gap-x-12">
+              <div class="mb-6 lg:mb-0">
+                <div class="bg-white block rounded-lg shadow-lg">
+                  <div class="relative overflow-hidden bg-no-repeat bg-cover">
+                    <img src="assets/img/Adnan.jpeg" class="w-full rounded-t-lg" />
+                    <a href="#!">
+                      <div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed"></div>
+                    </a>
+                    <svg class="absolute" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"
+                      style="left: 0; bottom: 0">
+                      <path fill="#fff"
+                        d="M0,288L48,272C96,256,192,224,288,197.3C384,171,480,149,576,165.3C672,181,768,235,864,250.7C960,267,1056,245,1152,250.7C1248,256,1344,288,1392,304L1440,320L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+                      </path>
+                    </svg>
+                  </div>
+                  <div class="p-6">
+                    <h5 class="text-lg font-bold mb-4">Adnan Ahmad</h5>
+                    <p class="text-gray-500 mb-4">President</p>
+                    <ul class="list-inside flex mx-auto justify-center">
+                      <a href="#!" class="px-2">
+                        <svg xmlns="https://www.instagram.com/adnanahmads999/" viewBox="0 0 448 512" class="w-4 h-4 text-blue-600">
+                          <path fill="currentColor"
+                            d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                        </svg>
+                      </a>
+                      <a href="https://www.linkedin.com/in/adnanahmads999/" class="px-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="w-4 h-4 text-blue-600">
+                          <path fill="currentColor"
+                            d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z" />
+                        </svg>
+                      </a>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+        
+              <div class="mb-6 lg:mb-0">
+                <div class="bg-white block rounded-lg shadow-lg">
+                  <div class="relative overflow-hidden bg-no-repeat bg-cover">
+                    <img src="assets/img/Anviksha.jpeg" class="w-full rounded-t-lg" />
+                    <a href="#!">
+                      <div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed"></div>
+                    </a>
+                    <svg class="absolute" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"
+                      style="left: 0; bottom: 0">
+                      <path fill="#fff"
+                        d="M0,96L48,128C96,160,192,224,288,240C384,256,480,224,576,213.3C672,203,768,213,864,202.7C960,192,1056,160,1152,128C1248,96,1344,64,1392,48L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+                      </path>
+                    </svg>
+                  </div>
+                  <div class="p-6">
+                    <h5 class="text-lg font-bold mb-4">Anviksha Patel</h5>
+                    <p class="text-gray-500 mb-4">Vice-President</p>
+                    <ul class="list-inside flex mx-auto justify-center">
+                      <a href="https://www.instagram.com/anviksha_ptl/" class="px-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="w-4 h-4 text-blue-600">
+                          <path fill="currentColor"
+                            d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                        </svg>
+                      </a>
+                      <a href="https://www.instagram.com/anviksha_ptl/" class="px-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="w-4 h-4 text-blue-600">
+                          <path fill="currentColor"
+                            d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z" />
+                        </svg>
+                      </a>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+        
+              <div class="">
+                <div class="bg-white block rounded-lg shadow-lg">
+                  <div class="relative overflow-hidden bg-no-repeat bg-cover">
+                    <img src="assets/img/Yashraj.jpeg" class="w-full rounded-t-lg" />
+                    <a href="#!">
+                      <div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed"></div>
+                    </a>
+                    <svg class="absolute" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"
+                      style="left: 0; bottom: 0">
+                      <path fill="#fff"
+                        d="M0,288L48,256C96,224,192,160,288,160C384,160,480,224,576,213.3C672,203,768,117,864,85.3C960,53,1056,75,1152,69.3C1248,64,1344,32,1392,16L1440,0L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+                      </path>
+                    </svg>
+                  </div>
+                  <div class="p-6">
+                    <h5 class="text-lg font-bold mb-4">Yash Raj Singh</h5>
+                    <p class="text-gray-500 mb-4">Technical lead</p>
+                    <ul class="list-inside flex mx-auto justify-center">
+                      <a href="https://www.linkedin.com/in/yash-raj-singh-a585741a7/" class="px-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="w-4 h-4 text-blue-600">
+                          <path fill="currentColor"
+                            d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                        </svg>
+                      </a>
+                      <a href="https://www.instagram.com/anviksha_ptl/" class="px-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="w-4 h-4 text-blue-600">
+                          <path fill="currentColor"
+                            d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z" />
+                        </svg>
+                      </a>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+             <div class="grid md:grid-cols-3 gap-x-6 lg:gap-x-12">
+              <div class="mb-6 lg:mb-0">
+                <div class="bg-white block rounded-lg shadow-lg">
+                  <div class="relative overflow-hidden bg-no-repeat bg-cover">
+                    <img src="assets/img/Shrestha.jpeg" class="w-full rounded-t-lg" />
+                    <a href="#!">
+                      <div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed"></div>
+                    </a>
+                    <svg class="absolute" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"
+                      style="left: 0; bottom: 0">
+                      <path fill="#fff"
+                        d="M0,288L48,272C96,256,192,224,288,197.3C384,171,480,149,576,165.3C672,181,768,235,864,250.7C960,267,1056,245,1152,250.7C1248,256,1344,288,1392,304L1440,320L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+                      </path>
+                    </svg>
+                  </div>
+                  <div class="p-6">
+                    <h5 class="text-lg font-bold mb-4">Shrestha Singh</h5>
+                    <p class="text-gray-500 mb-4">Design & Branding Head</p>
+                    <ul class="list-inside flex mx-auto justify-center">
+                      <a href="https://www.instagram.com/bts._.shreak._.20/" class="px-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="w-4 h-4 text-blue-600">
+                          <path fill="currentColor"
+                            d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                        </svg>
+                      </a>
+                      <a href="https://www.linkedin.com/in/shrestha-singh-9375a8216/" class="px-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="w-4 h-4 text-blue-600">
+                          <path fill="currentColor"
+                            d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z" />
+                        </svg>
+                      </a>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+        
+              <div class="mb-6 lg:mb-0">
+                <div class="bg-white block rounded-lg shadow-lg">
+                  <div class="relative overflow-hidden bg-no-repeat bg-cover">
+                    <img src="assets/img/astha.jpeg" class="w-full rounded-t-lg" />
+                    <a href="#!">
+                      <div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed"></div>
+                    </a>
+                    <svg class="absolute" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"
+                      style="left: 0; bottom: 0">
+                      <path fill="#fff"
+                        d="M0,96L48,128C96,160,192,224,288,240C384,256,480,224,576,213.3C672,203,768,213,864,202.7C960,192,1056,160,1152,128C1248,96,1344,64,1392,48L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+                      </path>
+                    </svg>
+                  </div>
+                  <div class="p-6">
+                    <h5 class="text-lg font-bold mb-4">Astha Tripathi</h5>
+                    <p class="text-gray-500 mb-4">Public Realtion & Outreach Head</p>
+                    <ul class="list-inside flex mx-auto justify-center">
+                      <a href="https://www.instagram.com/astha_tripathi__/" class="px-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="w-4 h-4 text-blue-600">
+                          <path fill="currentColor"
+                            d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                        </svg>
+                      </a>
+                      <a href="https://www.linkedin.com/in/astha-tripathi-913162213/" class="px-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="w-4 h-4 text-blue-600">
+                          <path fill="currentColor"
+                            d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z" />
+                        </svg>
+                      </a>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+        
+              <div class="">
+                <div class="bg-white block rounded-lg shadow-lg">
+                  <div class="relative overflow-hidden bg-no-repeat bg-cover">
+                    <img src="assets/img/aditya.jpeg" class="w-full rounded-t-lg" />
+                    <a href="#!">
+                      <div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed"></div>
+                    </a>
+                    <svg class="absolute" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"
+                      style="left: 0; bottom: 0">
+                      <path fill="#fff"
+                        d="M0,288L48,256C96,224,192,160,288,160C384,160,480,224,576,213.3C672,203,768,117,864,85.3C960,53,1056,75,1152,69.3C1248,64,1344,32,1392,16L1440,0L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+                      </path>
+                    </svg>
+                  </div>
+                  <div class="p-6">
+                    <h5 class="text-lg font-bold mb-4">Aditya Singh</h5>
+                    <p class="text-gray-500 mb-4">Innovation and Project Lead</p>
+                    <ul class="list-inside flex mx-auto justify-center">
+                      <a href="https://www.instagram.com/_adi_02__/" class="px-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="w-4 h-4 text-blue-600">
+                          <path fill="currentColor"
+                            d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                        </svg>
+                      </a>
+                      <a href="https://www.linken.com/in/adi008" class="px-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="w-4 h-4 text-blue-600">
+                          <path fill="currentColor"
+                            d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z" />
+                        </svg>
+                      </a>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+             <div class="grid md:grid-cols-3 gap-x-6 lg:gap-x-12">
+              <div class="mb-6 lg:mb-0">
+                <div class="bg-white block rounded-lg shadow-lg">
+                  <div class="relative overflow-hidden bg-no-repeat bg-cover">
+                    <img src="assets/img/tanmay.jpeg" class="w-full rounded-t-lg" />
+                    <a href="#!">
+                      <div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed"></div>
+                    </a>
+                    <svg class="absolute" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"
+                      style="left: 0; bottom: 0">
+                      <path fill="#fff"
+                        d="M0,288L48,272C96,256,192,224,288,197.3C384,171,480,149,576,165.3C672,181,768,235,864,250.7C960,267,1056,245,1152,250.7C1248,256,1344,288,1392,304L1440,320L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+                      </path>
+                    </svg>
+                  </div>
+                  <div class="p-6">
+                    <h5 class="text-lg font-bold mb-4">Tanmay Gangwar</h5>
+                    <p class="text-gray-500 mb-4">Sub Technical Head</p>
+                    <ul class="list-inside flex mx-auto justify-center">
+                      <a href="https://www.instagram.com/gangwar__tanmay/" class="px-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="w-4 h-4 text-blue-600">
+                          <path fill="currentColor"
+                            d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                        </svg>
+                      </a>
+                      <a href="https://www.linkedin.com/in/tanmay-gangwar-27a123245/" class="px-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="w-4 h-4 text-blue-600">
+                          <path fill="currentColor"
+                            d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z" />
+                        </svg>
+                      </a>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+        
+              <div class="mb-6 lg:mb-0">
+                <div class="bg-white block rounded-lg shadow-lg">
+                  <div class="relative overflow-hidden bg-no-repeat bg-cover">
+                    <img src="assets/img/aryan.jpeg" class="w-full rounded-t-lg" />
+                    <a href="#!">
+                      <div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed"></div>
+                    </a>
+                    <svg class="absolute" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"
+                      style="left: 0; bottom: 0">
+                      <path fill="#fff"
+                        d="M0,96L48,128C96,160,192,224,288,240C384,256,480,224,576,213.3C672,203,768,213,864,202.7C960,192,1056,160,1152,128C1248,96,1344,64,1392,48L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+                      </path>
+                    </svg>
+                  </div>
+                  <div class="p-6">
+                    <h5 class="text-lg font-bold mb-4">Aryan Srivastava</h5>
+                    <p class="text-gray-500 mb-4">Social Media & Marketing Head</p>
+                    <ul class="list-inside flex mx-auto justify-center">
+                      <a href="https://www.instagram.com/aryansrivastava4693/" class="px-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="w-4 h-4 text-blue-600">
+                          <path fill="currentColor"
+                            d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                        </svg>
+                      </a>
+                      <a href="https://www.linkedin.com/in/aryan-srivastava-261974208/" class="px-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="w-4 h-4 text-blue-600">
+                          <path fill="currentColor"
+                            d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z" />
+                        </svg>
+                      </a>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+        
+              <div class="">
+                <div class="bg-white block rounded-lg shadow-lg">
+                  <div class="relative overflow-hidden bg-no-repeat bg-cover">
+                    <img src="assets/img/ayush.jpeg" class="w-full rounded-t-lg" />
+                    <a href="#!">
+                      <div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed"></div>
+                    </a>
+                    <svg class="absolute" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"
+                      style="left: 0; bottom: 0">
+                      <path fill="#fff"
+                        d="M0,288L48,256C96,224,192,160,288,160C384,160,480,224,576,213.3C672,203,768,117,864,85.3C960,53,1056,75,1152,69.3C1248,64,1344,32,1392,16L1440,0L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+                      </path>
+                    </svg>
+                  </div>
+                  <div class="p-6">
+                    <h5 class="text-lg font-bold mb-4">Ayush Pal Singh</h5>
+                    <p class="text-gray-500 mb-4">Event <head></head></p>
+                    <ul class="list-inside flex mx-auto justify-center">
+                      <a href="#!" class="px-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="w-4 h-4 text-blue-600">
+                          <path fill="currentColor"
+                            d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                        </svg>
+                      </a>
+                      <a href="https://www.linkedin.com/in/aryan-srivastava-261974208/" class="px-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="w-4 h-4 text-blue-600">
+                          <path fill="currentColor"
+                            d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z" />
+                        </svg>
+                      </a>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- Section: Design Block -->
+          
+        </div>
+      </section>
+
+<!-- Prizes -->
+
+  <section id="Prizes" class="text-white body-font bg-gray-800">
+    <br>
+
+    <div class="flex flex-col text-center w-full mb-20">
+      <h1 class="sm:text-5xl text-5xl font-medium title-font mb-4 text-white">Prizes</h1>
+      <!-- <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them man bun deep jianbing selfies heirloom.</p> -->
+    </div>
+    <div class="container px-4 py-4 mx-auto">
+      <div class="flex flex-wrap -m-4">
+        <div class="lg:w-1/2 lg:mb-0 mb-6 p-4">
+          <div class="h-full text-center">
+            <img alt="testimonial" class="w-40 h-40 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100" src="assets/img/gfg_goodies.jpeg">
+            <p class="leading-relaxed"></p>
+            <span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-6 mb-4"></span>
+            <h2 class="text-white font-medium title-font tracking-wider text-sm text-3xl">Goodies from geeksforgeeks</h2>
+            <!-- <p class="text-white">Senior Product Designer</p> -->
+          </div>
+        </div>
+        <div class="lg:w-1/3 lg:mb-0 mb-6 p-4">
+          <div class="h-full text-center">
+            <img alt="testimonial" class="w-40 h-40 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100" src="assets/img/voucher.png">
+            <p class="leading-relaxed"></p>
+            <span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-6 mb-4"></span>
+            <h2 class="text-white font-medium title-font tracking-wider text-sm text-3xl">Vouchers of upto INR 15000 from geeksforgeeks</h2>
+            <!-- <p class="text-white">UI Develeoper</p> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+      <!-- sponser -->
+
+      
+        <section id="sponsors" class="text-gray-600 body-font">
+
+
+          <div class="container px-5 py-24 mx-auto">
+            <div class="flex flex-col text-center w-full mb-20">
+              <h1 class="sm:text-5xl text-5xl font-medium title-font mb-4 text-gray-900">Sponsors</h1>
+              <!-- <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them man bun deep jianbing selfies heirloom.</p> -->
+            </div>
+            <div class="flex flex-wrap -m-4">
+              <div class="lg:w-1/3 sm:w-1/2 p-4">
+                <div class="flex relative">
+                  <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="https://dummyimage.com/600x360">
+                  <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+                    <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">THE SUBTITLE</h2>
+                    <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Shooting Stars</h1>
+                    <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="lg:w-1/3 sm:w-1/2 p-4">
+                <div class="flex relative">
+                  <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="https://dummyimage.com/601x361">
+                  <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+                    <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">THE SUBTITLE</h2>
+                    <h1 class="title-font text-lg font-medium text-gray-900 mb-3">The Catalyzer</h1>
+                    <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="lg:w-1/3 sm:w-1/2 p-4">
+                <div class="flex relative">
+                  <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="https://dummyimage.com/603x363">
+                  <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+                    <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">THE SUBTITLE</h2>
+                    <h1 class="title-font text-lg font-medium text-gray-900 mb-3">The 400 Blows</h1>
+                    <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </section>
+     
+      
+
+
+      <!-- FAQ-->
+      <section id="faq" class="text-gray-600 body-font bg-gray-800">
+        <br>
+        <h1 class="sm:text-5xl text-5xl font-medium title-font mb-4 text-white text-center font-bold">Frequently Asked Questions</h1>
+        <div class="accordion">
+                <!-- span to target fix closing accordion -->
+                <span class="target-fix" id="accordion"></span>
+                 
+                <!-- First Accoridon Option -->
+                <div class="wow fadeInLeft">
+                    <!-- span to target fix accordion -->
+                    <span class="target-fix" id="accordion1"></span>
+                    
+                    <!-- Link to open accordion, hidden when open --> 
+                    <a href="#accordion1" id="open-accordion1" title="open">Who can apply ?</a>
+                    
+                    <!-- Link to close accordion, hidden when closed -->
+                    <a href="#accordion" id="close-accordion1" title="close">Who can apply ?</a> 
+                    
+                    <!-- Accorion content goes in this div -->
+                    <div class="accordion-content">
+                        <p>Anyone can apply from the college or outside of the college if he/she is in 2<sup>nd</sup> or 3<sup>rd</sup> year. Registration process is same for everyone.</p>
+                    </div>
+                </div>
+        <br>
+                <!-- Second Accoridon Option -->
+                <div class="wow fadeInRight">
+                    <span class="target-fix" id="accordion2"></span>
+                    <a href="#accordion2" id="open-accordion2" title="open">Second Accordion</a>
+                    <a href="#accordion" id="close-accordion2" title="close">Second Accordion</a>
+                    <div class="accordion-content">
+                        <p>Accordion 2 Content.</p>       
+                    </div>
+                </div>
+        <br>
+                <!-- Third Accoridon Option -->
+                <div class="wow fadeInLeft">
+                    <span class="target-fix" id="accordion3"></span>
+                    <a href="#accordion3" id="open-accordion3" title="open">Third Accordion</a>
+                    <a href="#accordion" id="close-accordion3" title="close">Third Accordion</a>
+                    <div class="accordion-content">
+                        <p>Accordion 3 Content</p>
+                    </div>
+                </div>
+                <br>
+                <!-- Fourth Accoridon Option -->
+                <div class="wow fadeInRight">
+                    <span class="target-fix" id="accordion4"></span>
+                    <a href="#accordion4" id="open-accordion4" title="open">Fourth Accoridon </a>
+                    <a href="#accordion" id="close-accordion4" title="close">Fourth Accoridon </a>
+                    <div class="accordion-content">
+                        <p>Accordion 3 Content</p>
+                    </div>
+                </div>
+                <br>
+                <!-- fifth Accoridon Option -->
+                <div class="wow fadeInLeft">
+                    <span class="target-fix" id="accordion5"></span>
+                    <a href="#accordion5" id="open-accordion5" title="open">fifth Accoridon</a>
+                    <a href="#accordion" id="close-accordion5" title="close">fifth Accoridon</a>
+                    <div class="accordion-content">
+                        <p>Accordion 3 Content</p>
+                    </div>
+                </div>
+                <br>
+                <!-- Sixth Accoridon Option -->
+                <div class="wow fadeInRight">
+                    <span class="target-fix" id="accordion4"></span>
+                    <a href="#accordion6" id="open-accordion6" title="open">Sixth Accoridon</a>
+                    <a href="#accordion" id="close-accordion6" title="close">Sixth Accoridon</a>
+                    <div class="accordion-content">
+                        <p>Accordion 3 Content</p>
+                    </div>
+                </div>
+            </div>
+        
+        
+      </section>
+      <!-- Contact Section -->
+
+
+      <!-- <section id="contact" class="text-white bg-gray-800 body-font relative"> -->
+        <footer class="text-gray-600 body-font">
+          <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+            <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+              
+              <span class="ml-3 text-xl">NOVATHON</span>
+            </a>
+            <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 202@ GEEKSFORGEEKS BBDEC Student Chapter 
+          
+            </p>
+            <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+              <a class="text-gray-500">
+                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                  <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                </svg>
+              </a>
+              <a class="ml-3 text-gray-500">
+                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                  <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                </svg>
+              </a>
+              <a class="ml-3 text-gray-500">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                  <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                </svg>
+              </a>
+              <a class="ml-3 text-gray-500">
+                <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                  <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+                  <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                </svg>
+              </a>
+            </span>
+          </div>
+        </footer>
+      <!-- </section> -->
+
+
+
+</body>
+</html>

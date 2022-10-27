@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.css" integrity="sha512-phGxLIsvHFArdI7IyLjv14dchvbVkEDaH95efvAae/y2exeWBQCQDpNFbOTdV1p4/pIa/XtbuDCnfhDEIXhvGQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <title>Event Registration</title>
+    </head>
+    <body  class="bg-gray-700">
+             <!-- NavBar Starts -->
+<!-- NavBar Starts -->
+<nav class="bg-black navbar navbar-default templatemo-nav shadow-lg">
+  <div class="max-w-6xl mx-auto px-4">
+    <div class="flex justify-between">
+      <div class="flex space-x-7">
+        <div>
+          <!-- Website Logo -->
+          <a href="index.html" class="flex items-center py-4 px-2">
+            <img src="assets/img/hackathon.png" alt="Logo" class="rounded-full h-12 w-12 mr-2">
+            <span class="font-semibold text-white font-serif text-2xl">Novathon</span>
+          </a>
+        </div>
+        <!-- Primary Navbar items -->
+        <div class="hidden md:flex items-center space-x-1">
+          <a href="index.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-blue-500 hover:border-b-4 border-blue-500 transition duration-300">Home</a>
+          <a href="index.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-blue-500 hover:border-b-4 border-blue-500 transition duration-300">Events</a>
+          <a href="index.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-blue-500 hover:border-b-4 border-blue-500 transition duration-300">Roadmap</a>
+          <a href="index.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-blue-500 hover:border-b-4 border-blue-500 transition duration-300">Rules Of Event</a>
+          <a href="index.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-blue-500 hover:border-b-4 border-blue-500 transition duration-300">Contact Us</a>
+        </div>
+      </div>
+      
+      <!-- Mobile menu button -->
+      <div class="md:hidden flex items-center">
+        <button class="outline-none mobile-menu-button">
+        <svg class=" w-6 h-6 text-gray-500 hover:text-blue-500 "
+          x-show="!showMenu"
+          fill="none"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+      </div>
+    </div>
+  </div>
+  <!-- mobile menu -->
+  <div class="hidden mobile-menu">
+    <ul class="">
+      <li class="active"><a href="main.html" class="block text-sm px-2 py-4 text-white bg-blue-500 font-semibold">Home</a></li>
+      <li><a href="main.html" class="block text-sm px-2 py-4 hover:bg-blue-500 transition duration-300">Events</a></li>
+      <li><a href="main.html" class="block text-sm px-2 py-4 hover:bg-blue-500 transition duration-300">Roadmap</a></li>
+      <li><a href="main.html" class="block text-sm px-2 py-4 hover:bg-blue-500 transition duration-300">Rules Of Event</a></li>
+      <li><a href="main.html" class="block text-sm px-2 py-4 hover:bg-blue-500 transition duration-300">Contact Us</a></li>
+    </ul>
+  </div>
+  <script>
+    const btn = document.querySelector("button.mobile-menu-button");
+    const menu = document.querySelector(".mobile-menu");
+
+    btn.addEventListener("click", () => {
+      menu.classList.toggle("hidden");
+    });
+  </script>
+</nav>
+<!-- NavBar Ends -->
+
+
+          <!-- form starts -->
+
+
+
+<div>
+
+  <div class="hidden sm:block" aria-hidden="true">
+    <div class="py-5">
+      <div ></div>
+    </div>
+  </div>
+  
+  <div class="mt-10 sm:mt-0 mb-60">
+    <!-- <div class="md:grid md:grid-cols-3 md:gap-6"> -->
+        
+      <div class="mx-80 px-40">
+      <div class="mt-5 md:mt-0 md:col-span-2">
+        <form action="#" method="POST">
+            <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">REGISTRATION FORM
+              </h1>
+          <div class="shadow overflow-hidden sm:rounded-md">
+            <div class="px-4 py-5 bg-white sm:p-6">
+              <div class="grid grid-cols-6 gap-6">
+                <div class="col-span-6 sm:col-span-3">
+                  <label for="first-name" class="block text-sm font-medium text-gray-700">First name</label>
+                  <input type="text" name="first-name" id="first-name" autocomplete="given-name" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                </div>
+  
+                <div class="col-span-6 sm:col-span-3">
+                  <label for="last-name" class="block text-sm font-medium text-gray-700">Last name</label>
+                  <input type="text" name="last-name" id="last-name" autocomplete="family-name" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                </div>
+  
+                <div class="col-span-6 sm:col-span-4">
+                  <label for="College-name" class="block text-sm font-medium text-gray-700">College Name</label>
+                  <input type="text" name="College-name" id="College-name" autocomplete="place" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                </div>
+                
+                <div class="col-span-6 sm:col-span-4">
+                    <label for="email-address" class="block text-sm font-medium text-gray-700">Email address</label>
+                    <input type="text" name="email-address" id="email-address" autocomplete="email" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                  </div>
+
+
+                  <div class="col-span-6 sm:col-span-4">
+                    <label for="phone-number" class="block text-sm font-medium text-gray-700">Contact Number</label>
+                    <input type="tel" name="phone-number" id="phone-number" autocomplete="tel" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                  </div>
+                
+                  <div class="col-span-6 sm:col-span-4">
+                    <label for="dob" class="block text-sm font-medium text-gray-700">Date of Birth</label>
+                    <input type="date" name="dob" id="dob" autocomplete="bday-day" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                  </div>
+                  
+
+
+                <div class="col-span-6 sm:col-span-3">
+                  <label for="country" class="block text-sm font-medium text-gray-700">Select the Event</label>
+                  <select id="country" name="country" autocomplete="country-name" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                    <option selected>Open this select menu</option>
+                    <option value="1Event">First Event</option>
+                    <option value="2Event">Second Event</option>
+                    <option value="3Event">Third Event</option>
+                  </select>
+                </div>
+
+                
+  
+                
+              </div>
+            </div>
+            <div class="px-4 py-3 bg-gray-50 text-right sm:px-6">
+              <button type="submit" class="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                Submit
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>  
+  </div>
+  
+    
+      <!-- form ends -->
+      <footer class="bg-gray-800 text-center lg:text-left">
+        <div class="text-gray-300 text-center p-4" style="background-color: rgba(0, 0, 0, 0.2);">
+            Designed by Team Enigma © <a class="text-white" href="index.html">Official Technical community Of BBDEC</a>
+        </div>
+      </footer>
+
+</body>
+</html>
